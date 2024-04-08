@@ -1,0 +1,20 @@
+.navbar {
+    background-color: aqua;
+}
+
+.navbar__logo {
+    display: inline;
+    background-color: black;
+}
+
+.navbar__navmenu {
+    display: inline;
+}
+
+.navbar__navmenu__menu {
+    display: inline;
+}
+
+.navbar__navmenu__menuitem {
+    display: inline;
+}
