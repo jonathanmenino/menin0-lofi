@@ -1,4 +1,4 @@
-/*ADD HERTINE FONT TO PROJECT*/
+/*FONTS*/
 @font-face {
   font-family: Hertine;
   src: url("../fonts/Hertine.ttf") format("truetype");
@@ -11,6 +11,19 @@ body {
   min-width: 360px;
 }
 
+.container {
+  max-width: 730px;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+/*ADD A LITTLE DASH UNDER THE TITLES*/
 h2 {
   position: relative;
   clear: right;
@@ -39,33 +52,7 @@ h2::after {
   height: 0px;
 }
 
-.page__wrapper {
-}
-
-.navbar__section {
-  text-align: center;
-  background-color: #0e1918;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.navbar__logo {
-  display: inline;
-  margin-bottom: 20px;
-}
-.navbar__navmenu {
-  display: inline;
-}
-.navbar__navmenu__menu {
-  display: inline;
-}
-.navbar__navmenu__li {
-  display: inline;
-  margin-left: 20px;
-}
-.navbar__navmenu__li > a {
-  color: white;
-}
-
+/* INDEX PAGE */
 .herobanner__background {
   background-color: #0e1918;
 }
@@ -82,13 +69,11 @@ h2::after {
   gap: 30px;
   justify-content: space-around;
 }
-
 .herobanner__release__div {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
-
 .herobanner__release__plisten {
   color: white;
   font-size: 16px;
@@ -122,7 +107,6 @@ h2::after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .listennow__section {
   padding: 30px;
   max-width: 730px;
@@ -153,18 +137,16 @@ h2::after {
 .listennow__streaminglinks__li {
   background-color: white;
 }
-
 .listennow__streaminglinks__li:hover {
   background-color: rgb(247, 255, 242);
 }
-
 .listennow__streaminglinks__li > a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: black;
+  text-decoration: none;
 }
-
 .listennow__streaminglinks__li > a > div {
   margin-right: 20px;
   display: flex;
@@ -182,7 +164,6 @@ h2::after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .usethemusic__section {
   padding: 30px 0px 60px 0px;
   max-width: 730px;
@@ -198,17 +179,18 @@ h2::after {
 .usethemusic__p {
   text-align: center;
 }
-
 .usethemusic__whale__relative {
   position: relative;
 }
-
 .usethemusic__whale__absolute {
   position: absolute;
   height: 200px;
   width: auto;
   right: 0px;
   top: -100px;
+  animation-duration: 4s;
+  animation-name: animals;
+  animation-iteration-count: infinite;
 }
 
 .about__background {
@@ -222,25 +204,18 @@ h2::after {
   max-width: 730px;
   margin: auto;
 }
-
 .about__section > div {
   display: inline-block;
 }
-
 .about__picture {
   display: inline-block;
 }
-.about__title {
-}
+
 .about__name {
   font-size: 42px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-.about__p {
-}
-.about__social__instagramlink {
 }
 .about__social__instagramimg {
   margin-top: 20px;
@@ -268,13 +243,13 @@ h2::after {
   background-color: #db3e51;
   color: white;
   padding: 10px 20px;
+  text-decoration: none;
 }
 .coffee__button:hover {
   background-color: #f35568;
   color: white;
   padding: 10px 20px;
 }
-
 .coffee__sloth__relative {
   position: relative;
 }
@@ -284,10 +259,13 @@ h2::after {
   position: absolute;
   right: 0px;
   top: -120px;
+  animation-duration: 4s;
+  animation-name: animals;
+  animation-iteration-count: infinite;
 }
 
 .newsletter__background {
-  padding: 60px 0px 60px 0px;
+  padding: 60px 0px 30px 0px;
   background-image: url(../img/beach-bg.png);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -342,7 +320,7 @@ h2::after {
 }
 
 .contact__background {
-  padding: 60px 0px 60px 0px;
+  padding: 30px 0px 60px 0px;
   background-image: url(../img/sea-bg.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -360,7 +338,7 @@ h2::after {
 }
 .contact__div__clouds {
   width: 190px;
-  height: 514px;
+  height: 550px;
   background-image: url(../img/clouds.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -370,18 +348,18 @@ h2::after {
   position: absolute;
   top: 240px;
   left: -20px;
+  animation-duration: 4s;
+  animation-name: animals;
+  animation-iteration-count: infinite;
 }
-
 .contact__div__form {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 30px;
   flex-grow: 1;
 }
-
 .contact__div__form > p {
   margin-bottom: 30px;
 }
-
 .contact__title {
   font-family: Hertine, sans-serif;
   font-size: 48px;
@@ -405,6 +383,9 @@ h2::after {
   height: 140px;
   resize: none;
 }
+.contact__form__messageinput::placeholder {
+  font-family: Heebo, sans-serif;
+}
 .contact__form__sendbutton {
   text-align: center;
   border: none;
@@ -424,7 +405,7 @@ h2::after {
   background-color: black;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   .herobanner__release__plisten::after,
   .about__title::after,
   .coffee__title::after,
@@ -497,8 +478,6 @@ h2::after {
   .newsletter__title {
     font-size: 40px;
   }
-  .contact__section {
-  }
   .contact__imgdiv {
     display: none;
   }
@@ -533,5 +512,17 @@ h2::after {
   }
   .contact__title {
     font-size: 32px;
+  }
+}
+
+@keyframes animals {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.95;
+  }
+  100% {
+    scale: 1;
   }
 }
