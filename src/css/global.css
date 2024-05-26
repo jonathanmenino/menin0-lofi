@@ -11,6 +11,10 @@ body {
   min-width: 360px;
 }
 
+.navbar {
+  padding: 15px 20px;
+}
+
 .container {
   max-width: 730px;
 }
