@@ -15,8 +15,12 @@ body {
   padding: 15px 20px;
 }
 
+.navbar-nav {
+  gap: 15px;
+}
+
 .container {
-  max-width: 730px;
+  max-width: 1200px;
 }
 
 .nav-link {
@@ -38,20 +42,19 @@ h2::after {
   position: absolute;
   border-top: 4px solid #db3e51;
   left: 45%;
-  bottom: -8px;
+  bottom: -20px;
   width: 10%;
   height: 0px;
 }
 
 .herobanner__release__plisten::after,
 .about__title::after,
-.coffee__title::after,
 .contact__title::after {
   content: "";
   position: absolute;
   border-top: 4px solid #db3e51;
   left: 0px;
-  bottom: -8px;
+  bottom: -15px;
   width: 7%;
   height: 0px;
 }
@@ -59,11 +62,13 @@ h2::after {
 /* INDEX PAGE */
 .herobanner__background {
   background-color: #0e1918;
+  padding-top: 30px;
 }
 .herobanner__section {
-  max-width: 730px;
+  max-width: 1200px;
+  height: 500px;
   margin: auto;
-  padding: 30px;
+  padding: 60px 30px;
   border-radius: 30px 30px 0px 0px;
   background-image: url(../img/blur-cover.png);
   background-position: center;
@@ -80,24 +85,31 @@ h2::after {
 }
 .herobanner__release__plisten {
   color: white;
-  font-size: 16px;
+  font-size: 21px;
   position: relative;
 }
 .herobanner__release__title {
   color: white;
-  font-size: 42px;
+  font-size: 68px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .herobanner__release__cover {
-  max-width: 300px;
-  min-width: 100px;
+  width: auto;
+  max-width: 450px;
   height: auto;
+  max-height: 450px;
 }
 .herobanner__streaminglinks {
   display: flex;
   gap: 12px;
+  align-items: flex-start;
+  padding: 0px;
+}
+.herobanner__streaminglinks__li > a > img {
+  width: 32px;
+  height: auto;
 }
 .herobanner__streaminglinks__li > a > img:hover {
   transition: scale 0.5s;
@@ -105,15 +117,14 @@ h2::after {
 }
 
 .listennow__background {
-  padding: 60px 0px 60px 0px;
+  padding: 60px 30px;
   background-image: url(../img/skyscrappers-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .listennow__section {
-  padding: 30px;
-  max-width: 730px;
+  max-width: 1200px;
   margin: auto;
 }
 .listennow__h1 {
@@ -123,8 +134,8 @@ h2::after {
 }
 .listennow__title {
   font-family: Hertine, sans-serif;
-  margin: 30px 0px 30px 0px;
-  font-size: 48px;
+  margin: 30px 0px 60px 0px;
+  font-size: 68px;
   color: white;
   text-align: center;
 }
@@ -162,24 +173,33 @@ h2::after {
   height: 50px;
 }
 
+.listennow__streaminglinks__li > a > div > img {
+  width: 32px;
+  height: auto;
+}
+
 .usethemusic__background {
-  padding: 60px 0px 60px 0px;
+  padding: 60px 30px 60px 30px;
   background-image: url(../img/clouds-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .usethemusic__section {
-  padding: 30px 0px 60px 0px;
-  max-width: 730px;
+  height: 320px;
+  max-width: 1200px;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .usethemusic__title {
   font-family: Hertine, sans-serif;
-  font-size: 48px;
+  font-size: 68px;
   margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 60px;
 }
 .usethemusic__p {
   text-align: center;
@@ -189,10 +209,10 @@ h2::after {
 }
 .usethemusic__whale__absolute {
   position: absolute;
-  height: 200px;
+  height: 300px;
   width: auto;
   right: 0px;
-  top: -100px;
+  top: -110px;
   animation-duration: 4s;
   animation-name: animals;
   animation-iteration-count: infinite;
@@ -200,13 +220,15 @@ h2::after {
 
 .about__background {
   background-color: #ffe6b5;
+  padding: 0px 30px;
 }
 .about__section {
+  height: 500px;
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 60px 30px;
-  max-width: 730px;
+  gap: 60px;
+  padding: 60px 0px;
+  max-width: 1200px;
   margin: auto;
 }
 .about__section > div {
@@ -214,15 +236,21 @@ h2::after {
 }
 .about__picture {
   display: inline-block;
+  width: 600px;
+  height: auto;
 }
-
+.about__title {
+  font-size: 26px;
+}
 .about__name {
-  font-size: 42px;
+  font-size: 55px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 .about__social__instagramimg {
+  width: 25px;
+  height: auto;
   margin-top: 20px;
 }
 .about__social__instagramimg:hover {
@@ -231,18 +259,23 @@ h2::after {
 }
 
 .coffee__section {
-  max-width: 730px;
+  max-width: 1200px;
   margin: auto;
   padding: 60px 30px 60px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .coffee__title {
   font-family: Hertine, sans-serif;
-  font-size: 48px;
+  font-size: 68px;
+  margin-bottom: 20px;
 }
 .coffee__p {
   margin-top: 30px;
   margin-bottom: 20px;
   max-width: 450px;
+  text-align: center;
 }
 .coffee__button {
   background-color: #db3e51;
@@ -257,12 +290,13 @@ h2::after {
 }
 .coffee__sloth__relative {
   position: relative;
+  align-self: flex-end;
 }
 .coffee__sloth__absolute {
   width: 300px;
   height: auto;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: -120px;
   animation-duration: 4s;
   animation-name: animals;
@@ -270,15 +304,15 @@ h2::after {
 }
 
 .newsletter__background {
-  padding: 60px 0px 30px 0px;
+  padding: 60px 30px 30px 30px;
   background-image: url(../img/beach-bg.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .newsletter__section {
-  padding: 30px 0px 60px 0px;
-  max-width: 730px;
+  padding: 60px 0px 60px 0px;
+  max-width: 1200px;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
@@ -287,8 +321,8 @@ h2::after {
 }
 .newsletter__title {
   font-family: Hertine, sans-serif;
-  font-size: 48px;
-  margin-bottom: 30px;
+  font-size: 68px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .newsletter__p {
@@ -300,14 +334,13 @@ h2::after {
 }
 .newsletter__form {
   text-align: center;
-  margin: auto;
   width: 100%;
 }
 .newsletter__form__emailinput {
   display: inline-block;
   height: 30px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   min-width: 400px;
 }
 .newsletter__form__submitbutton {
@@ -325,7 +358,7 @@ h2::after {
 }
 
 .contact__background {
-  padding: 30px 0px 60px 0px;
+  padding: 30px 30px 60px 30px;
   background-image: url(../img/sea-bg.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -334,7 +367,7 @@ h2::after {
 .contact__section {
   display: flex;
   gap: 30px;
-  max-width: 730px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
 }
@@ -342,8 +375,8 @@ h2::after {
   position: relative;
 }
 .contact__div__clouds {
-  width: 190px;
-  height: 550px;
+  width: 240px;
+  height: 600px;
   background-image: url(../img/clouds.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -351,6 +384,8 @@ h2::after {
 }
 .contact__img__cat {
   position: absolute;
+  height: 360px;
+  width: auto;
   top: 240px;
   left: -20px;
   animation-duration: 4s;
@@ -359,7 +394,7 @@ h2::after {
 }
 .contact__div__form {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
+  padding: 60px 30px;
   flex-grow: 1;
 }
 .contact__div__form > p {
@@ -367,7 +402,7 @@ h2::after {
 }
 .contact__title {
   font-family: Hertine, sans-serif;
-  font-size: 48px;
+  font-size: 68px;
   margin-bottom: 30px;
 }
 .contact__form {
@@ -410,6 +445,32 @@ h2::after {
   background-color: black;
 }
 
+@media screen and (max-width: 992px) {
+  .herobanner__section {
+    height: 460px;
+  }
+
+  .herobanner__release__title {
+    font-size: 55px;
+  }
+  .herobanner__release__cover {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .usethemusic__whale__absolute {
+    height: 220px;
+  }
+
+  .coffee__sloth__absolute {
+    width: 250px;
+  }
+
+  .contact__title {
+    font-size: 55px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .herobanner__release__plisten::after,
   .about__title::after,
@@ -419,6 +480,7 @@ h2::after {
   }
 
   .herobanner__section {
+    height: auto;
     flex-direction: column-reverse;
   }
   .herobanner__release__div {
@@ -428,11 +490,15 @@ h2::after {
     margin: auto;
   }
 
+  .listennow__title {
+    font-size: 42px;
+  }
   .listennow__streaminglinks {
     grid-template-columns: repeat(2, 1.5fr);
   }
 
   .usethemusic__section {
+    height: auto;
     padding: 60px 0px 60px 0px;
   }
   .usethemusic__title {
@@ -446,18 +512,25 @@ h2::after {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: -320px;
+    top: -360px;
   }
 
   .about__section {
+    height: auto;
     display: flex;
     flex-direction: column;
   }
   .about__section > div {
     text-align: center;
   }
+  .about__picture {
+    width: 300px;
+  }
   .about__p {
     max-width: 450px;
+  }
+  .about__social__instagramimg {
+    margin-bottom: 20px;
   }
 
   .coffee__section {
@@ -471,17 +544,24 @@ h2::after {
     margin-left: auto;
     margin-right: auto;
   }
+  .coffee__sloth__relative {
+    background-color: aqua;
+    align-self: normal;
+  }
   .coffee__sloth__absolute {
     width: 250px;
     height: auto;
-    top: -340px;
-    margin-left: auto;
-    margin-right: auto;
+    top: -380px;
     left: 0;
     right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .newsletter__title {
     font-size: 40px;
+  }
+  .contact__background {
+    padding: 60px 30px;
   }
   .contact__imgdiv {
     display: none;
