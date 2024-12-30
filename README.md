@@ -11,7 +11,7 @@ The website features:
 
 ## 🎨 Design Concept
 The visual design of the website was conceptualized using Figma. You can explore the design concept here:
-[menin0 - Figma Design](https://www.figma.com/design/VRfx6O96uid1v8RRLesghX/menin0?node-id=87-1340&t=hAaQ950Da0ppXtEw-1)
+[menin0 - Figma Design](https://www.figma.com/design/VRfx6O96uid1v8RRLesghX/menin0?node-id=57-285&t=n3tpVLtizsGxKhVr-0)
 
 ## 📂 Project Structure
 The project is entirely built with:
