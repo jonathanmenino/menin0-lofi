@@ -13,6 +13,13 @@ The website features:
 The visual design of the website was conceptualized using Figma. You can explore the design concept here:
 [menin0 - Figma Design](https://www.figma.com/design/VRfx6O96uid1v8RRLesghX/menin0?node-id=57-285&t=n3tpVLtizsGxKhVr-0)
 
+## ✨ 2026 Redesign
+The site was revisited to work as a design portfolio case:
+- One visual story from top to bottom: night city → sky → afternoon → beach → sea, with a consistent card, button and type system (design tokens in `global.css`).
+- Clear hero with a main call to action, an embedded Spotify player and labelled platform cards.
+- Accessible forms (visible labels, inline errors, focus states), skip link, keyboard-friendly mobile menu and reduced-motion support.
+- Bootstrap removed and images converted to WebP: total image weight went from about 3 MB to under 300 KB.
+
 ## 📂 Project Structure
 The project is entirely built with:
 - **HTML:** Provides the structure of the webpage.

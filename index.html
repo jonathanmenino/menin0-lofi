@@ -3,359 +3,333 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon" />
-    <!--RESET CSS-->
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <!--BOOTSTRAP-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+    <title>menin0 | Lo-fi Hip Hop</title>
+    <meta
+      name="description"
+      content="menin0 is a lo-fi hip hop producer from Brazil making jazzy, upbeat beats. Listen on Spotify, Apple Music, YouTube and more."
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!--CSS FILE-->
-    <link rel="stylesheet" href="./src/css/global.css" />
-    <!--HEEBO FONT-->
+    <meta name="theme-color" content="#0b1413" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="menin0 | Lo-fi Hip Hop" />
+    <meta
+      property="og:description"
+      content="Jazzy, upbeat lo-fi beats from Brazil. Listen to the latest release, Rainy Coffee."
+    />
+    <meta property="og:image" content="src/img/rainy-coffee-cover.png" />
+    <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300..800&display=swap"
       rel="stylesheet"
     />
-
-    <title>menin0 | Lo-fi Hip Hop</title>
+    <link rel="preload" href="src/fonts/Hertine.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/global.css" />
+    <script src="src/js/main.js" defer></script>
   </head>
 
   <body>
-    <div class="page__wrapper">
-      <!--NAVBAR-->
-      <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
-        <div class="container">
-          <a href="#home" class="navbar-brand">
-            <img src="src/img/logo-menin0.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="menuNavbar" class="collapse navbar-collapse">
-            <div class="navbar-nav ms-auto">
-              <a href="#home" class="nav-link active">Home</a>
-              <a href="#usethemusic" class="nav-link">Use the Music</a>
-              <a href="#about" class="nav-link">About me</a
-              ><a href="#contact" class="nav-link">Contact</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <main>
-        <!--HERO BANNER-->
-        <div id="home" class="herobanner__background">
-          <section class="herobanner__section">
-            <div class="herobanner__release__div">
-              <p class="herobanner__release__plisten">
-                Listen to my latest release
+    <!-- HEADER -->
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a href="#home" class="site-header__logo" aria-label="menin0, back to top">
+          <img src="src/img/logo-menin0.png" alt="" width="138" height="24" />
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-nav-toggle
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Main" data-nav>
+          <a href="#listen" class="site-nav__link">Listen</a>
+          <a href="#use-the-music" class="site-nav__link">Use the music</a>
+          <a href="#about" class="site-nav__link">About</a>
+          <a href="#contact" class="site-nav__link">Contact</a>
+          <a href="https://ko-fi.com/menin0" class="btn btn--small site-nav__cta" target="_blank" rel="noopener">
+            Support
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero__card">
+            <div class="hero__text">
+              <p class="eyebrow">Listen to my latest release</p>
+              <h1 id="hero-title" class="hero__title">Rainy Coffee</h1>
+              <p class="hero__lead">
+                Jazzy, upbeat lo-fi beats by <strong>menin0</strong>, a hip hop
+                producer from Brazil.
               </p>
-              <p class="herobanner__release__title">Rainy Coffee</p>
-              <ul class="herobanner__streaminglinks">
-                <li class="herobanner__streaminglinks__li">
-                  <a
-                    href="https://open.spotify.com/intl-pt/artist/25aFd5MLcf5yOSRLMksbYa"
-                    target="_blank"
-                    ><img
-                      src="./src/img/spotify-logo.png"
-                      alt="Rainy Coffee on Spotify"
-                  /></a>
+
+              <div class="hero__actions">
+                <a
+                  class="btn"
+                  href="https://open.spotify.com/intl-pt/artist/25aFd5MLcf5yOSRLMksbYa"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src="src/img/spotify-logo.png" alt="" width="20" height="20" />
+                  Listen on Spotify
+                </a>
+                <a class="btn btn--ghost" href="#listen">More platforms</a>
+              </div>
+
+              <ul class="hero__platforms" aria-label="Also available on">
+                <li>
+                  <a href="https://music.youtube.com/channel/UCDBR3gDW8gR7t2QSgXtr1Mg" target="_blank" rel="noopener" aria-label="YouTube Music">
+                    <img src="src/img/youtube-music-logo.png" alt="" width="28" height="28" />
+                  </a>
                 </li>
-                <li class="herobanner__streaminglinks__li">
-                  <a
-                    href="https://music.youtube.com/channel/UCDBR3gDW8gR7t2QSgXtr1Mg"
-                    target="_blank"
-                    ><img
-                      src="./src/img/youtube-music-logo.png"
-                      alt="Rainy Coffee on YouTube Music"
-                  /></a>
+                <li>
+                  <a href="https://music.apple.com/us/artist/menin0/1656628841" target="_blank" rel="noopener" aria-label="Apple Music">
+                    <img src="src/img/apple-music-logo.png" alt="" width="28" height="28" />
+                  </a>
                 </li>
-                <li class="herobanner__streaminglinks__li">
-                  <a
-                    href="https://music.apple.com/us/artist/menin0/1656628841"
-                    target="_blank"
-                    ><img
-                      src="./src/img/apple-music-logo.png"
-                      alt="Rainy Coffee on Apple Music"
-                  /></a>
+                <li>
+                  <a href="https://music.amazon.com.br/" target="_blank" rel="noopener" aria-label="Amazon Music">
+                    <img src="src/img/amazon-music-logo.png" alt="" width="28" height="28" />
+                  </a>
                 </li>
-                <li class="herobanner__streaminglinks__li">
-                  <a href="https://music.amazon.com.br/" target="_blank"
-                    ><img
-                      src="./src/img/amazon-music-logo.png"
-                      alt="Rainy Coffee on Amazon Music"
-                  /></a>
-                </li>
-                <li class="herobanner__streaminglinks__li">
-                  <a href="https://www.deezer.com/" target="_blank"
-                    ><img
-                      src="./src/img/deezer-logo.png"
-                      alt="Rainy Coffee on Deezer"
-                  /></a>
+                <li>
+                  <a href="https://www.deezer.com/" target="_blank" rel="noopener" aria-label="Deezer">
+                    <img src="src/img/deezer-logo.png" alt="" width="28" height="28" />
+                  </a>
                 </li>
               </ul>
             </div>
 
-            <img
-              class="herobanner__release__cover"
-              src="./src/img/Lofi cover - rainy coffee-2 1.png"
-              alt="Rainy Coffee Album Cover"
-            />
-          </section>
+            <figure class="hero__cover">
+              <img
+                src="src/img/rainy-coffee-cover.webp"
+                alt="Rainy Coffee cover: a cat in a hoodie resting on a sofa with a coffee mug, rain on the window and string lights"
+                width="680"
+                height="680"
+                fetchpriority="high"
+              />
+            </figure>
+          </div>
         </div>
+      </section>
 
-        <!--LISTEN TO ARTIST SECTION-->
-        <div class="listennow__background">
-          <section class="listennow__section">
-            <h1 class="listennow__h1">menin0 - Lofi Hip Hop Artist</h1>
-            <h2 class="listennow__title">Listen Now</h2>
-            <p class="listennow__p">Choose your favorite streaming platform</p>
-            <ul class="listennow__streaminglinks">
-              <li class="listennow__streaminglinks__li">
-                <a
-                  href="https://open.spotify.com/intl-pt/artist/25aFd5MLcf5yOSRLMksbYa"
-                  target="_blank"
-                  ><div>
-                    <img
-                      class="listennow__streaminglinks__img"
-                      src="./src/img/spotify-logo.png"
-                      alt="menin0 on Spotify"
-                    />
-                  </div>
-                  Spotify</a
-                >
-              </li>
+      <!-- LISTEN -->
+      <section id="listen" class="listen" aria-labelledby="listen-title">
+        <div class="container">
+          <header class="section-head">
+            <h2 id="listen-title" class="script-title">Listen now</h2>
+            <p>Press play right here, or pick your favourite platform.</p>
+          </header>
 
-              <li class="listennow__streaminglinks__li">
-                <a
-                  href="https://music.apple.com/us/artist/menin0/1656628841"
-                  target="_blank"
-                  ><div>
-                    <img
-                      class="listennow__streaminglinks__img"
-                      src="./src/img/apple-music-logo.png"
-                      alt="menin0 on Apple Music"
-                    />
-                  </div>
-                  Apple Music</a
-                >
-              </li>
-              <li class="listennow__streaminglinks__li">
-                <a
-                  href="https://www.youtube.com/channel/UCJpjd0jxT3EIYzXMJUM8yng"
-                  target="_blank"
-                >
-                  <div>
-                    <img
-                      src="./src/img/youtube-logo.png"
-                      alt="menin0 on YouTube"
-                    />
-                  </div>
-                  YouTube</a
-                >
-              </li>
-              <li class="listennow__streaminglinks__li">
-                <a
-                  href="https://music.youtube.com/channel/UCDBR3gDW8gR7t2QSgXtr1Mg"
-                  target="_blank"
-                >
-                  <div>
-                    <img
-                      src="./src/img/youtube-music-logo.png"
-                      alt="menin0 on YouTube Music"
-                    />
-                  </div>
+          <div class="listen__grid">
+            <div class="listen__player">
+              <iframe
+                title="menin0 on Spotify"
+                src="https://open.spotify.com/embed/artist/25aFd5MLcf5yOSRLMksbYa?utm_source=generator&amp;theme=0"
+                width="100%"
+                height="352"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
 
-                  YouTube Music</a
-                >
+            <ul class="platforms">
+              <li>
+                <a class="platform" href="https://open.spotify.com/intl-pt/artist/25aFd5MLcf5yOSRLMksbYa" target="_blank" rel="noopener">
+                  <span class="platform__icon"><img src="src/img/spotify-logo.png" alt="" width="28" height="28" /></span>
+                  <span class="platform__name">Spotify</span>
+                  <span class="platform__arrow" aria-hidden="true">↗</span>
+                </a>
               </li>
-              <li class="listennow__streaminglinks__li">
-                <a href="https://music.amazon.com.br/" target="_blank">
-                  <div>
-                    <img
-                      src="./src/img/amazon-music-logo.png"
-                      alt="menin0 on Amazon Music"
-                    />
-                  </div>
-                  Amazon Music</a
-                >
+              <li>
+                <a class="platform" href="https://music.apple.com/us/artist/menin0/1656628841" target="_blank" rel="noopener">
+                  <span class="platform__icon"><img src="src/img/apple-music-logo.png" alt="" width="28" height="28" /></span>
+                  <span class="platform__name">Apple Music</span>
+                  <span class="platform__arrow" aria-hidden="true">↗</span>
+                </a>
               </li>
-              <li class="listennow__streaminglinks__li">
-                <a href="https://www.deezer.com/" target="_blank">
-                  <div>
-                    <img
-                      src="./src/img/deezer-logo-white.png"
-                      alt="menin0 on Deezer"
-                    />
-                  </div>
-                  Deezer</a
-                >
+              <li>
+                <a class="platform" href="https://www.youtube.com/channel/UCJpjd0jxT3EIYzXMJUM8yng" target="_blank" rel="noopener">
+                  <span class="platform__icon"><img src="src/img/youtube-logo.png" alt="" width="28" height="20" /></span>
+                  <span class="platform__name">YouTube</span>
+                  <span class="platform__arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a class="platform" href="https://music.youtube.com/channel/UCDBR3gDW8gR7t2QSgXtr1Mg" target="_blank" rel="noopener">
+                  <span class="platform__icon"><img src="src/img/youtube-music-logo.png" alt="" width="28" height="28" /></span>
+                  <span class="platform__name">YouTube Music</span>
+                  <span class="platform__arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a class="platform" href="https://music.amazon.com.br/" target="_blank" rel="noopener">
+                  <span class="platform__icon"><img src="src/img/amazon-music-logo.png" alt="" width="28" height="28" /></span>
+                  <span class="platform__name">Amazon Music</span>
+                  <span class="platform__arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a class="platform" href="https://www.deezer.com/" target="_blank" rel="noopener">
+                  <span class="platform__icon"><img src="src/img/deezer-logo-white.png" alt="" width="28" height="28" /></span>
+                  <span class="platform__name">Deezer</span>
+                  <span class="platform__arrow" aria-hidden="true">↗</span>
+                </a>
               </li>
             </ul>
-          </section>
+          </div>
         </div>
+      </section>
 
-        <!--USE THE MUSIC SECTION-->
-        <div id="usethemusic" class="usethemusic__background">
-          <section class="usethemusic__section">
-            <h2 class="usethemusic__title">Use the Music</h2>
-            <p class="usethemusic__p">
-              Are you a creator? Owns a lofi hip-hop radio? <br />
-              Feel free to use my music for your content.
-            </p>
-            <div class="usethemusic__whale__relative">
-              <img
-                class="usethemusic__whale__absolute"
-                src="./src/img/blue-whale.png"
-                alt="Blue Whale"
-              />
-            </div>
-          </section>
-        </div>
-
-        <!--ABOUT ME SECTION-->
-        <div id="about" class="about__background">
-          <section class="about__section">
-            <img
-              class="about__picture"
-              src="./src/img/menin0-picture.png"
-              alt=""
-            />
-            <div>
-              <h2 class="about__title">About Me</h2>
-              <p class="about__name">menin0</p>
-              <p class="about__p">
-                My name is Johnny Menino and i’m a lofi hip-hop producer living
-                in Brazil. My tracks in general have an jazzy upbeat vibe.
-                Follow me and listen to my latest releases!
+      <!-- USE THE MUSIC -->
+      <section id="use-the-music" class="scene scene--sky" aria-labelledby="use-title">
+        <div class="container">
+          <div class="panel panel--split">
+            <div class="panel__body">
+              <h2 id="use-title" class="script-title script-title--dark">Use the music</h2>
+              <p class="panel__lead">
+                Are you a creator or do you run a lo-fi hip hop radio? Feel free
+                to use my music in your content.
               </p>
-              <a
-                class="about__social__instagramlink"
-                href="https://instagram.com/johnnymenin0"
-                target="_blank"
-                ><img
-                  class="about__social__instagramimg"
-                  src="./src/img/instagram-logo.png"
-                  alt="menin0 on Instagram"
-              /></a>
+              <ul class="checklist">
+                <li>Videos, streams and podcasts</li>
+                <li>Lo-fi radios and playlists</li>
+              </ul>
+              <a class="btn" href="#contact">Get in touch</a>
             </div>
-          </section>
-        </div>
-
-        <!--BUY ME A COFFEE SECTION-->
-        <section class="coffee__section">
-          <h2 class="coffee__title">Buy me a coffee</h2>
-          <p class="coffee__p">
-            You appreciate my work and want to help me keep going? Make a
-            donation!
-          </p>
-          <a
-            class="coffee__button"
-            href="https://ko-fi.com/menin0"
-            target="_blank"
-            >Go to my Ko-fi page</a
-          >
-          <div class="coffee__sloth__relative">
             <img
-              class="coffee__sloth__absolute"
-              src="./src/img/sloth.png"
+              class="panel__art float"
+              src="src/img/blue-whale.webp"
               alt=""
+              width="498"
+              height="417"
+              loading="lazy"
             />
           </div>
-        </section>
-      </main>
-      <!--NEWSLETTER SECTION-->
-      <div class="newsletter__background">
-        <section class="newsletter__section">
-          <h2 class="newsletter__title">Newsletter</h2>
-          <p class="newsletter__p">
-            Want to know when a new song is released? Subscribe to my newsletter
-            and stay tuned!
-          </p>
-          <form class="newsletter__form" action="POST">
-            <input
-              class="newsletter__form__emailinput"
-              type="email"
-              name="email-newsletter"
-              placeholder="Your E-mail"
-              id="e-mail-newsletter"
-            />
-            <br />
-            <button class="newsletter__form__submitbutton" type="submit">
-              Submit
-            </button>
-          </form>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <!--GET IN TOUCH SECTION-->
-      <div id="contact" class="contact__background">
-        <section class="contact__section">
-          <div class="contact__imgdiv">
-            <div class="contact__div__clouds"></div>
-            <img class="contact__img__cat" src="./src/img/cat.png" alt="" />
+      <!-- ABOUT -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container about__inner">
+          <img
+            class="about__picture"
+            src="src/img/menin0-picture.webp"
+            alt="Portrait of Johnny Menino, the producer behind menin0"
+            width="450"
+            height="450"
+            loading="lazy"
+          />
+          <div class="about__text">
+            <p class="eyebrow eyebrow--dark">About me</p>
+            <h2 id="about-title" class="about__name">menin0</h2>
+            <p>
+              My name is Johnny Menino and I'm a lo-fi hip hop producer living
+              in Brazil. My tracks usually have a jazzy, upbeat vibe. Follow me
+              and listen to my latest releases!
+            </p>
+            <a class="link-pill" href="https://instagram.com/johnnymenin0" target="_blank" rel="noopener">
+              <img src="src/img/instagram-logo.png" alt="" width="20" height="20" />
+              @johnnymenin0
+            </a>
           </div>
-          <div class="contact__div__form">
-            <h2 class="contact__title">Get in touch</h2>
-            <p>Need to reach me? Fill the form below.</p>
-            <form class="contact__form" action="POST">
-              <input
-                class="contact__form__nameinput"
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                id="name"
-              />
-              <input
-                class="contact__form__emailinput"
-                type="email"
-                name="email"
-                placeholder="Your E-mail"
-                id="email"
-              />
-              <input
-                class="contact__form__subjectinput"
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                id="subject"
-              />
-              <textarea
-                class="contact__form__messageinput"
-                name="message"
-                placeholder="Type Your Message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <button class="contact__form__sendbutton" type="submit">
-                Send
-              </button>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section class="support" aria-labelledby="support-title">
+        <div class="container support__inner">
+          <img class="support__art float" src="src/img/sloth.webp" alt="" width="483" height="368" loading="lazy" />
+          <div class="support__text">
+            <h2 id="support-title" class="script-title script-title--dark">Buy me a coffee</h2>
+            <p>Enjoying the beats and want to help me keep going? Make a donation!</p>
+            <a class="btn" href="https://ko-fi.com/menin0" target="_blank" rel="noopener">Go to my Ko-fi page</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="scene scene--beach" aria-labelledby="newsletter-title">
+        <div class="container">
+          <div class="panel panel--narrow">
+            <h2 id="newsletter-title" class="script-title script-title--dark">Newsletter</h2>
+            <p class="panel__lead">Want to know when a new song is released? Subscribe and stay tuned.</p>
+            <form class="form form--inline" data-form novalidate>
+              <div class="field">
+                <label for="newsletter-email">E-mail</label>
+                <input id="newsletter-email" type="email" name="email" autocomplete="email" placeholder="you@email.com" required />
+              </div>
+              <button class="btn" type="submit">Subscribe</button>
+              <p class="form__status" role="status" aria-live="polite"></p>
             </form>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <footer class="footer__section">
-        Cloudy Bennett Productions - menin0 © copyright 2024 - All Rights
-        Reserved
-      </footer>
-    </div>
+      <!-- CONTACT -->
+      <section id="contact" class="scene scene--sea" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="panel panel--contact">
+            <div class="contact__art" aria-hidden="true">
+              <img class="float" src="src/img/cat.webp" alt="" width="434" height="479" loading="lazy" />
+            </div>
+            <div class="contact__body">
+              <h2 id="contact-title" class="script-title script-title--dark">Get in touch</h2>
+              <p class="panel__lead">Need to reach me? Fill in the form below.</p>
+              <form class="form" data-form novalidate>
+                <div class="form__row">
+                  <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" autocomplete="name" required />
+                  </div>
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" autocomplete="email" required />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="subject">Subject <span class="field__optional">(optional)</span></label>
+                  <input id="subject" type="text" name="subject" />
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="btn" type="submit">Send message</button>
+                <p class="form__status" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <img src="src/img/logo-menin0.png" alt="menin0" width="138" height="24" />
+        <nav class="site-footer__links" aria-label="Social">
+          <a href="https://open.spotify.com/intl-pt/artist/25aFd5MLcf5yOSRLMksbYa" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://www.youtube.com/channel/UCJpjd0jxT3EIYzXMJUM8yng" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://instagram.com/johnnymenin0" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://ko-fi.com/menin0" target="_blank" rel="noopener">Ko-fi</a>
+        </nav>
+        <p class="site-footer__copy">
+          Cloudy Bennett Productions · menin0 © <span data-year>2024</span>. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
